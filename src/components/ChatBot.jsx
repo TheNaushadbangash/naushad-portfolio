@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { askAI } from "../services/openrouter";
 import { FaRobot, FaPaperPlane, FaTimes } from "react-icons/fa";
 
@@ -6,8 +6,6 @@ function ChatBot() {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const messagesEndRef = useRef(null);
-  const [displayText, setDisplayText] = useState("");
 
   const [messages, setMessages] = useState([
     {
@@ -17,52 +15,63 @@ function ChatBot() {
   ]);
 
   const sendMessage = async () => {
-    if (!message.trim()) return;
+    if (!message.trim() || loading) return;
 
     const userMessage = {
       sender: "user",
       text: message,
     };
-    
-    
 
     setMessages((prev) => [...prev, userMessage]);
 
     const question = message;
     setMessage("");
-
     setLoading(true);
 
-    const reply = await askAI(question);
+    try {
+      const reply = await askAI(question);
 
-    setLoading(false);
+      setMessages((prev) => [
+        ...prev,
+        {
+          sender: "bot",
+          text: reply,
+        },
+      ]);
+    } catch (error) {
+      console.error(error);
 
-    setMessages((prev) => [
-      ...prev,
-      {
-        sender: "bot",
-        text: reply,
-      },
-    ]);
+      setMessages((prev) => [
+        ...prev,
+        {
+          sender: "bot",
+          text: "Sorry, something went wrong. Please try again.",
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <>
+      {/* Chatbot Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-8 right-8 w-16 h-16 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-2xl shadow-2xl hover:scale-110 transition z-50"
+        className="fixed bottom-8 right-8 w-16 h-16 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-2xl shadow-2xl hover:scale-110 transition z-50 flex items-center justify-center"
       >
         {open ? <FaTimes /> : <FaRobot />}
       </button>
 
+      {/* Chat Window */}
       {open && (
         <div className="fixed bottom-28 right-8 w-96 h-[550px] bg-gray-900 border border-cyan-500 rounded-2xl shadow-2xl flex flex-col overflow-hidden z-50">
           {/* Header */}
-
           <div className="bg-gradient-to-r from-cyan-500 to-blue-600 p-4 text-white font-bold text-lg">
             🤖 Naushad AI Assistant
           </div>
 
+          {/* Suggested Questions */}
           <div className="flex flex-wrap gap-2 p-3 border-b border-gray-700">
             <button
               onClick={() => setMessage("Who is Muhammad Naushad?")}
@@ -93,6 +102,7 @@ function ChatBot() {
             </button>
           </div>
 
+          {/* Messages */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {messages.map((msg, index) => (
               <div
@@ -114,6 +124,7 @@ function ChatBot() {
             )}
           </div>
 
+          {/* Input */}
           <div className="flex border-t border-gray-700">
             <input
               type="text"
@@ -122,13 +133,16 @@ function ChatBot() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               onKeyDown={(e) => {
-                if (e.key === "Enter") sendMessage();
+                if (e.key === "Enter") {
+                  sendMessage();
+                }
               }}
             />
 
             <button
               onClick={sendMessage}
-              className="bg-cyan-600 px-5 text-white hover:bg-cyan-700"
+              disabled={loading}
+              className="bg-cyan-600 px-5 text-white hover:bg-cyan-700 disabled:opacity-50"
             >
               <FaPaperPlane />
             </button>
