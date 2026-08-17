@@ -16,13 +16,13 @@ import Footer from "./components/Footer";
 function App() {
   const [loading, setLoading] = useState(true);
 
-useEffect(() => {
-  const timer = setTimeout(() => {
-    setLoading(false);
-  }, 2000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
 
-  return () => clearTimeout(timer);
-}, []);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -30,12 +30,13 @@ useEffect(() => {
       once: true,
     });
   }, []);
+
   if (loading) {
-  return <Loader />;
-}
+    return <Loader />;
+  }
 
   return (
-   <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-gray-900 text-white min-h-screen">
       <Navbar />
       <Hero />
       <About />
@@ -50,4 +51,3 @@ useEffect(() => {
 }
 
 export default App;
-
