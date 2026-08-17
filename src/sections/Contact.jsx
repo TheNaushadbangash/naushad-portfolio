@@ -1,3 +1,4 @@
+import { FaWhatsapp } from "react-icons/fa";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
@@ -440,6 +441,33 @@ function Contact() {
                   "
                 >
                   <FaLinkedin />
+                </a>
+                {/* WhatsApp */}
+
+                <a
+                  href="https://wa.me/923035459620"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="WhatsApp"
+                  title="Chat on WhatsApp"
+                  className="
+    w-12
+    h-12
+    rounded-xl
+    bg-green-500
+    flex
+    items-center
+    justify-center
+    text-xl
+    text-white
+    hover:bg-green-600
+    hover:scale-110
+    hover:shadow-[0_0_25px_rgba(34,197,94,0.4)]
+    transition-all
+    duration-300
+  "
+                >
+                  <FaWhatsapp />
                 </a>
               </div>
             </div>

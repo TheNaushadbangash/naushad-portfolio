@@ -2,6 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import {
   FaGithub,
   FaLinkedin,
+  FaWhatsapp,
   FaReact,
   FaJs,
   FaHtml5,
@@ -523,6 +524,33 @@ function Hero() {
               "
             >
               <FaLinkedin />
+            </a>
+            <a
+              href="https://wa.me/923XXXXXXXXX"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp"
+              className="
+    w-13
+    h-13
+    sm:w-14
+    sm:h-14
+    flex
+    items-center
+    justify-center
+    rounded-full
+    bg-green-500
+    text-2xl
+    text-white
+    hover:bg-green-600
+    hover:scale-110
+    hover:shadow-[0_0_25px_rgba(34,197,94,0.4)]
+    transition-all
+    duration-300
+    shadow-lg
+  "
+            >
+              <FaWhatsapp />
             </a>
           </div>
         </div>
