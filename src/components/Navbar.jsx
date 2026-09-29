@@ -173,8 +173,8 @@ function Navbar() {
             ))}
 
             <a
-              href="/Naushad-CV.pdf"
-              download
+              href="/Naushad-Khan-CV.pdf"
+              download="Naushad-Khan-CV.pdf"
               onClick={closeMenu}
               className="flex items-center justify-center gap-2 mt-3 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 font-semibold hover:scale-[1.02] transition-all duration-300"
             >
