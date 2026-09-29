@@ -406,21 +406,21 @@ function Hero() {
             </a>
 
             <a
-              href="/Naushad-CV.pdf"
-              download
+              href="/Naushad-Khan-CV.pdf"
+              download="Naushad-Khan-CV.pdf"
               className="
-                px-7
-                sm:px-8
-                py-3
-                rounded-full
-                border
-                border-cyan-400
-                hover:bg-cyan-500
-                hover:text-black
-                hover:scale-105
-                transition-all
-                duration-300
-              "
+    px-7
+    sm:px-8
+    py-3
+    rounded-full
+    border
+    border-cyan-400
+    hover:bg-cyan-500
+    hover:text-black
+    hover:scale-105
+    transition-all
+    duration-300
+  "
             >
               Download CV
             </a>
@@ -488,7 +488,7 @@ function Hero() {
               <FaLinkedin />
             </a>
             <a
-              href="https://wa.me/923XXXXXXXXX"
+              href="https://wa.me/923035459620"
               target="_blank"
               rel="noreferrer"
               aria-label="WhatsApp"
