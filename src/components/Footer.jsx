@@ -18,7 +18,7 @@ function Footer() {
 
   return (
     <footer className="relative bg-black text-white overflow-hidden border-t border-cyan-500/20">
-      {/* Background Glow */}
+      
 
       <div
         className="
@@ -77,7 +77,7 @@ function Footer() {
               CSS.
             </p>
 
-            {/* Availability */}
+            
 
             <div
               className="
@@ -100,7 +100,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          
 
           <div>
             <h3 className="text-xl font-bold mb-5">Quick Links</h3>
@@ -125,7 +125,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Connect */}
+          
 
           <div>
             <h3 className="text-xl font-bold mb-5">Connect With Me</h3>
@@ -135,7 +135,7 @@ function Footer() {
             </p>
 
             <div className="flex gap-4">
-              {/* GitHub */}
+              
 
               <a
                 href="https://github.com/TheNaushadbangash"
@@ -164,7 +164,7 @@ function Footer() {
                 <FaGithub />
               </a>
 
-              {/* LinkedIn */}
+              
 
               <a
                 href="https://linkedin.com/in/naushad-khan-0679823b7"
@@ -192,7 +192,7 @@ function Footer() {
                 <FaLinkedin />
               </a>
 
-              {/* Email */}
+              
 
               <a
                 href="mailto:naushadk789987@gmail.com"
@@ -221,11 +221,10 @@ function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
+        
 
         <div className="border-t border-gray-800 my-10"></div>
 
-        {/* Bottom */}
 
         <div
           className="

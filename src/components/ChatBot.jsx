@@ -39,9 +39,7 @@ function ChatBot() {
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
-  // =========================
-  // LOAD CHAT
-  // =========================
+
 
   const [messages, setMessages] = useState(() => {
     try {
@@ -62,9 +60,7 @@ function ChatBot() {
     }
   });
 
-  // =========================
-  // SAVE CHAT
-  // =========================
+
 
   useEffect(() => {
     try {
@@ -74,9 +70,7 @@ function ChatBot() {
     }
   }, [messages]);
 
-  // =========================
-  // AUTO SCROLL
-  // =========================
+
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({
@@ -84,9 +78,7 @@ function ChatBot() {
     });
   }, [messages, loading]);
 
-  // =========================
-  // FOCUS INPUT
-  // =========================
+
 
   useEffect(() => {
     if (!open) return;
@@ -98,9 +90,6 @@ function ChatBot() {
     return () => clearTimeout(timer);
   }, [open]);
 
-  // =========================
-  // ESCAPE TO CLOSE
-  // =========================
 
   useEffect(() => {
     const handleEscape = (event) => {
@@ -116,9 +105,6 @@ function ChatBot() {
     };
   }, [open]);
 
-  // =========================
-  // SEND MESSAGE
-  // =========================
 
   const sendMessage = async (customMessage = null) => {
     const text = (customMessage ?? message).trim();
@@ -165,9 +151,6 @@ function ChatBot() {
     }
   };
 
-  // =========================
-  // QUICK QUESTIONS
-  // =========================
 
   const quickQuestions = [
     {
@@ -197,9 +180,6 @@ function ChatBot() {
     },
   ];
 
-  // =========================
-  // CLEAR CHAT
-  // =========================
 
   const clearChat = () => {
     const confirmed = window.confirm(
@@ -223,9 +203,6 @@ function ChatBot() {
     }, 100);
   };
 
-  // =========================
-  // COPY MESSAGE
-  // =========================
 
   const copyMessage = async (text, id) => {
     try {
@@ -241,9 +218,8 @@ function ChatBot() {
     }
   };
 
-  // =========================
-  // KEYBOARD
-  // =========================
+
+
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter" && !event.shiftKey) {
@@ -252,9 +228,6 @@ function ChatBot() {
     }
   };
 
-  // =========================
-  // TOGGLE CHAT
-  // =========================
 
   const toggleChat = () => {
     setOpen((prev) => !prev);
@@ -262,9 +235,6 @@ function ChatBot() {
 
   return (
     <>
-      {/* =====================================================
-          FLOATING AI BUTTON
-      ===================================================== */}
 
       <button
         type="button"
@@ -341,9 +311,6 @@ function ChatBot() {
         )}
       </button>
 
-      {/* =====================================================
-          CHAT WINDOW
-      ===================================================== */}
 
       {open && (
         <div
@@ -385,9 +352,6 @@ function ChatBot() {
             animate-[chatOpen_0.25s_ease-out]
           "
         >
-          {/* =================================================
-              HEADER
-          ================================================= */}
 
           <div
             className="
@@ -546,10 +510,6 @@ function ChatBot() {
             </div>
           </div>
 
-          {/* =================================================
-              QUICK QUESTIONS
-          ================================================= */}
-
           <div
             className="
               shrink-0
@@ -653,9 +613,6 @@ function ChatBot() {
             )}
           </div>
 
-          {/* =================================================
-              MESSAGES
-          ================================================= */}
 
           <div
             className="
@@ -869,10 +826,6 @@ function ChatBot() {
               </div>
             ))}
 
-            {/* =================================================
-                TYPING INDICATOR
-            ================================================= */}
-
             {loading && (
               <div className="flex items-end gap-2.5">
                 <div
@@ -931,9 +884,6 @@ function ChatBot() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* =================================================
-              INPUT
-          ================================================= */}
 
           <div
             className="

@@ -35,8 +35,6 @@ function Hero() {
         sm:pt-24
       "
     >
-      {/* ================= BACKGROUND GLOW ================= */}
-
       <div
         className="
           absolute
@@ -81,11 +79,7 @@ function Hero() {
         "
       ></div>
 
-      {/* DARK OVERLAY */}
-
       <div className="absolute inset-0 bg-black/50"></div>
-
-      {/* ================= MAIN CONTENT ================= */}
 
       <div
         className="
@@ -103,13 +97,7 @@ function Hero() {
           sm:py-14
         "
       >
-        {/* ================= LEFT SIDE ================= */}
-
         <div data-aos="fade-right" className="text-center lg:text-left">
-          {/* ================================================= */}
-          {/* MOBILE ANIMATED TECH AREA */}
-          {/* ================================================= */}
-
           <div
             className="
               lg:hidden
@@ -123,8 +111,6 @@ function Hero() {
               mb-5
             "
           >
-            {/* Center Glow */}
-
             <div
               className="
                 absolute
@@ -136,8 +122,6 @@ function Hero() {
                 animate-pulse
               "
             ></div>
-
-            {/* Outer Ring */}
 
             <div
               className="
@@ -190,8 +174,6 @@ function Hero() {
               <FaReact />
             </div>
 
-            {/* JavaScript */}
-
             <div
               className="
                 absolute
@@ -216,8 +198,6 @@ function Hero() {
               JS
             </div>
 
-            {/* HTML */}
-
             <div
               className="
                 absolute
@@ -241,8 +221,6 @@ function Hero() {
               <FaHtml5 />
             </div>
 
-            {/* Tailwind */}
-
             <div
               className="
                 absolute
@@ -265,8 +243,6 @@ function Hero() {
             >
               <SiTailwindcss />
             </div>
-
-            {/* Center */}
 
             <div
               className="
@@ -292,12 +268,8 @@ function Hero() {
             </div>
           </div>
 
-          {/* ================= PROFILE IMAGE ================= */}
-
           <div className="flex justify-center lg:justify-start mb-5">
             <div className="relative">
-              {/* Glow */}
-
               <div
                 className="
                   absolute
@@ -335,8 +307,6 @@ function Hero() {
             </div>
           </div>
 
-          {/* ================= NAME ================= */}
-
           <h1
             className="
               mt-8
@@ -359,8 +329,6 @@ function Hero() {
           >
             Hi, I'm Naushad
           </h1>
-
-          {/* ================= ROLE ================= */}
 
           <h3
             className="
@@ -390,8 +358,6 @@ function Hero() {
             />
           </h3>
 
-          {/* ================= DESCRIPTION ================= */}
-
           <p
             className="
               mt-6
@@ -408,8 +374,6 @@ function Hero() {
             I build modern, responsive and user-friendly websites using React,
             JavaScript, Tailwind CSS and Bootstrap.
           </p>
-
-          {/* ================= BUTTONS ================= */}
 
           <div
             className="
@@ -461,8 +425,6 @@ function Hero() {
               Download CV
             </a>
           </div>
-
-          {/* ================= SOCIAL LINKS ================= */}
 
           <div
             className="
@@ -555,10 +517,6 @@ function Hero() {
           </div>
         </div>
 
-        {/* ================================================= */}
-        {/* DESKTOP RIGHT ANIMATED VISUAL */}
-        {/* ================================================= */}
-
         <div
           data-aos="fade-left"
           className="
@@ -570,8 +528,6 @@ function Hero() {
             min-h-[500px]
           "
         >
-          {/* Outer Glow */}
-
           <div
             className="
               absolute
@@ -583,8 +539,6 @@ function Hero() {
               animate-pulse
             "
           ></div>
-
-          {/* Rotating Ring */}
 
           <div
             className="
@@ -610,8 +564,6 @@ function Hero() {
             "
           ></div>
 
-          {/* ================= CODE WINDOW ================= */}
-
           <div
             className="
               relative
@@ -629,8 +581,6 @@ function Hero() {
               duration-500
             "
           >
-            {/* Window Header */}
-
             <div
               className="
                 flex
@@ -651,8 +601,6 @@ function Hero() {
 
               <span className="text-xs text-gray-500">developer.jsx</span>
             </div>
-
-            {/* Code */}
 
             <div className="p-6 font-mono text-sm leading-7">
               <p>
@@ -697,8 +645,6 @@ function Hero() {
                 ();
               </p>
 
-              {/* Cursor */}
-
               <span
                 className="
                   inline-block
@@ -711,8 +657,6 @@ function Hero() {
                 "
               ></span>
             </div>
-
-            {/* Bottom Tech Icons */}
 
             <div
               className="
@@ -772,8 +716,6 @@ function Hero() {
             </div>
           </div>
 
-          {/* Floating Badge 1 */}
-
           <div
             className="
               absolute
@@ -794,8 +736,6 @@ function Hero() {
           >
             ⚡ React Developer
           </div>
-
-          {/* Floating Badge 2 */}
 
           <div
             className="
@@ -819,8 +759,6 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      {/* ================= SCROLL DOWN ================= */}
 
       <div
         className="

@@ -104,7 +104,6 @@ function Skills() {
           duration-500
         "
       >
-        {/* Glow */}
         <div
           className="
             absolute
@@ -121,7 +120,6 @@ function Skills() {
           "
         ></div>
 
-        {/* Icon */}
         <div
           className={`
             relative
@@ -146,7 +144,6 @@ function Skills() {
           {skill.icon}
         </div>
 
-        {/* Name */}
         <h3
           className="
             relative
@@ -163,7 +160,6 @@ function Skills() {
           {skill.name}
         </h3>
 
-        {/* Level */}
         <div className="relative z-10 flex items-center justify-between mt-3">
           <span className="text-sm text-gray-500">Skill Level</span>
 
@@ -172,7 +168,6 @@ function Skills() {
           </span>
         </div>
 
-        {/* Progress */}
         <div
           className="
             relative
@@ -219,8 +214,6 @@ function Skills() {
         scroll-mt-24
       "
     >
-      {/* ================= BACKGROUND ================= */}
-
       <div
         className="
           absolute
@@ -249,11 +242,7 @@ function Skills() {
         "
       ></div>
 
-      {/* ================= MAIN ================= */}
-
       <div className="relative z-10 max-w-6xl mx-auto">
-        {/* ================= HEADING ================= */}
-
         <div className="text-center mb-16">
           <p
             className="
@@ -311,8 +300,6 @@ function Skills() {
           ></div>
         </div>
 
-        {/* ================= FRONTEND ================= */}
-
         <div className="mb-14">
           <div className="flex items-center gap-4 mb-7">
             <div
@@ -357,8 +344,6 @@ function Skills() {
           </div>
         </div>
 
-        {/* ================= OTHER TECHNOLOGIES ================= */}
-
         <div>
           <div className="flex items-center gap-4 mb-7">
             <div
@@ -402,8 +387,6 @@ function Skills() {
             ))}
           </div>
         </div>
-
-        {/* ================= BOTTOM MESSAGE ================= */}
 
         <div
           className="

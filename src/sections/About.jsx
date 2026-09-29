@@ -7,13 +7,9 @@ function About() {
       data-aos="fade-up"
       className="relative py-24 px-5 sm:px-6 scroll-mt-24 bg-gray-900 overflow-hidden"
     >
-      {/* Background Glow */}
-
       <div className="absolute top-20 left-[-120px] w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
 
       <div className="absolute bottom-10 right-[-120px] w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
-
-      {/* Floating Code Symbols */}
 
       <div className="absolute top-20 left-[8%] text-5xl text-cyan-400/10 font-mono animate-bounce hidden md:block">
         {"</>"}
@@ -38,14 +34,8 @@ function About() {
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-5 rounded-full"></div>
         </div>
 
-        {/* Main Grid */}
-
         <div className="grid lg:grid-cols-2 gap-10 items-center">
-          {/* LEFT - Developer Card */}
-
           <div className="relative group">
-            {/* Glow */}
-
             <div className="absolute inset-0 bg-cyan-500/10 blur-2xl rounded-3xl group-hover:bg-cyan-500/20 transition-all duration-500"></div>
 
             <div
@@ -64,8 +54,6 @@ function About() {
                 duration-500
               "
             >
-              {/* Icon */}
-
               <div className="flex items-center gap-5 mb-7">
                 <div
                   className="
@@ -98,8 +86,6 @@ function About() {
                 </div>
               </div>
 
-              {/* Description */}
-
               <p className="text-gray-300 leading-8 text-base sm:text-lg">
                 I'm a passionate frontend developer and Computer Science student
                 who enjoys building modern, responsive and user-friendly web
@@ -111,8 +97,6 @@ function About() {
                 and Bootstrap. I also enjoy exploring backend development,
                 databases and AI-powered applications.
               </p>
-
-              {/* Tech Icons */}
 
               <div className="flex flex-wrap gap-3 mt-8">
                 <span className="px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm hover:bg-cyan-500/20 transition">
@@ -134,11 +118,7 @@ function About() {
             </div>
           </div>
 
-          {/* RIGHT - Animated Info */}
-
           <div className="space-y-5">
-            {/* Card 1 */}
-
             <div
               className="
                 group
@@ -171,8 +151,6 @@ function About() {
                 </p>
               </div>
             </div>
-
-            {/* Card 2 */}
 
             <div
               className="
@@ -207,8 +185,6 @@ function About() {
               </div>
             </div>
 
-            {/* Card 3 */}
-
             <div
               className="
                 group
@@ -241,8 +217,6 @@ function About() {
                 </p>
               </div>
             </div>
-
-            {/* Stats */}
 
             <div className="grid grid-cols-3 gap-3 pt-3">
               <div className="text-center p-5 rounded-2xl bg-white/5 border border-gray-800 hover:border-cyan-400/40 hover:-translate-y-1 transition-all">

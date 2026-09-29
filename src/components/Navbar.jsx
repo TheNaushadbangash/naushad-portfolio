@@ -47,9 +47,7 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-900/80 backdrop-blur-xl border-b border-cyan-500/20 text-white z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        {/* ================= NAVBAR MAIN ================= */}
         <div className="h-20 flex items-center">
-          {/* ================= LOGO ================= */}
           <div className="flex-shrink-0">
             <a
               href="#home"
@@ -60,7 +58,6 @@ function Navbar() {
             </a>
           </div>
 
-          {/* ================= DESKTOP NAVIGATION ================= */}
           <div className="hidden md:flex flex-1 items-center justify-center">
             <div className="flex items-center gap-7">
               {navLinks.map((link) => (
@@ -105,19 +102,30 @@ function Navbar() {
             </div>
           </div>
 
-          {/* ================= DESKTOP CV BUTTON ================= */}
-          <div className="hidden md:flex flex-shrink-0">
-            <a
-              href="/Naushad-CV.pdf"
-              download
-              className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 font-semibold text-sm hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
-            >
-              <FaDownload />
-              Download CV
-            </a>
-          </div>
+          <a
+            href="/Naushad-Khan-CV.pdf"
+            download="Naushad-Khan-CV.pdf"
+            className="
+    inline-flex
+    items-center
+    gap-2
+    px-6
+    py-3
+    rounded-full
+    bg-gradient-to-r
+    from-cyan-500
+    to-blue-600
+    text-white
+    font-semibold
+    hover:scale-105
+    hover:shadow-[0_0_25px_rgba(34,211,238,0.35)]
+    transition-all
+    duration-300
+  "
+          >
+            Download CV
+          </a>
 
-          {/* ================= MOBILE MENU BUTTON ================= */}
           <div className="md:hidden ml-auto">
             <button
               onClick={() => setOpen(!open)}
@@ -129,7 +137,6 @@ function Navbar() {
           </div>
         </div>
 
-        {/* ================= MOBILE NAVIGATION ================= */}
         <div
           className={`
             md:hidden
@@ -165,7 +172,6 @@ function Navbar() {
               </a>
             ))}
 
-            {/* Mobile CV */}
             <a
               href="/Naushad-CV.pdf"
               download

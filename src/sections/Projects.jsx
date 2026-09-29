@@ -72,8 +72,6 @@ function Projects() {
         scroll-mt-24
       "
     >
-      {/* ================= BACKGROUND EFFECTS ================= */}
-
       <div
         className="
           absolute
@@ -102,11 +100,7 @@ function Projects() {
         "
       ></div>
 
-      {/* ================= MAIN CONTAINER ================= */}
-
       <div className="relative z-10 max-w-7xl mx-auto">
-        {/* ================= HEADING ================= */}
-
         <div className="text-center mb-16">
           <p
             className="
@@ -164,8 +158,6 @@ function Projects() {
           ></div>
         </div>
 
-        {/* ================= PROJECT GRID ================= */}
-
         <div
           className="
             grid
@@ -197,8 +189,6 @@ function Projects() {
                 }
               `}
             >
-              {/* FEATURED BADGE */}
-
               {project.featured && (
                 <div
                   className="
@@ -224,8 +214,6 @@ function Projects() {
                 </div>
               )}
 
-              {/* ================= IMAGE ================= */}
-
               <div className="relative h-56 overflow-hidden">
                 <img
                   src={project.image}
@@ -239,8 +227,6 @@ function Projects() {
                     group-hover:scale-110
                   "
                 />
-
-                {/* IMAGE OVERLAY */}
 
                 <div
                   className="
@@ -256,8 +242,6 @@ function Projects() {
                     duration-500
                   "
                 ></div>
-
-                {/* VIEW PROJECT */}
 
                 <div
                   className="
@@ -297,8 +281,6 @@ function Projects() {
                 </div>
               </div>
 
-              {/* ================= CONTENT ================= */}
-
               <div className="flex flex-col flex-1 p-6">
                 <h3
                   className="
@@ -323,8 +305,6 @@ function Projects() {
                   {project.description}
                 </p>
 
-                {/* ================= TECHNOLOGIES ================= */}
-
                 <div className="flex flex-wrap gap-2 mt-5">
                   {project.tech.map((item, i) => (
                     <span
@@ -345,8 +325,6 @@ function Projects() {
                     </span>
                   ))}
                 </div>
-
-                {/* ================= BUTTONS ================= */}
 
                 <div className="flex gap-3 mt-7">
                   <a
@@ -405,8 +383,6 @@ function Projects() {
             </div>
           ))}
         </div>
-
-        {/* ================= VIEW MORE ================= */}
 
         <div className="flex justify-center mt-14">
           <a

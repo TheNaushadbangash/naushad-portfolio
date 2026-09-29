@@ -82,8 +82,6 @@ function Contact() {
         overflow-hidden
       "
     >
-      {/* ================= BACKGROUND EFFECTS ================= */}
-
       <div
         className="
           absolute
@@ -127,11 +125,7 @@ function Contact() {
         "
       ></div>
 
-      {/* ================= MAIN CONTAINER ================= */}
-
       <div className="relative z-10 max-w-6xl mx-auto">
-        {/* ================= HEADING ================= */}
-
         <div className="text-center mb-14">
           <p
             className="
@@ -189,8 +183,6 @@ function Contact() {
           ></div>
         </div>
 
-        {/* ================= CONTACT GRID ================= */}
-
         <div
           className="
             grid
@@ -199,8 +191,6 @@ function Contact() {
             items-stretch
           "
         >
-          {/* ================= LEFT CARD ================= */}
-
           <div
             className="
               lg:col-span-2
@@ -254,8 +244,6 @@ function Contact() {
               projects and professional collaborations.
             </p>
 
-            {/* AVAILABLE STATUS */}
-
             <div
               className="
                 flex
@@ -301,8 +289,6 @@ function Contact() {
               </span>
             </div>
 
-            {/* EMAIL */}
-
             <a
               href="mailto:naushadk789987@gmail.com"
               className="
@@ -347,8 +333,6 @@ function Contact() {
               </div>
             </a>
 
-            {/* LOCATION */}
-
             <div
               className="
                 flex
@@ -386,14 +370,10 @@ function Contact() {
               </div>
             </div>
 
-            {/* SOCIAL */}
-
             <div className="mt-8">
               <p className="text-sm text-gray-500 mb-4">Connect with me</p>
 
               <div className="flex gap-4">
-                {/* GitHub */}
-
                 <a
                   href="https://github.com/TheNaushadbangash"
                   target="_blank"
@@ -418,8 +398,6 @@ function Contact() {
                   <FaGithub />
                 </a>
 
-                {/* LinkedIn */}
-
                 <a
                   href="https://linkedin.com/in/naushad-khan-0679823b7"
                   target="_blank"
@@ -442,7 +420,6 @@ function Contact() {
                 >
                   <FaLinkedin />
                 </a>
-                {/* WhatsApp */}
 
                 <a
                   href="https://wa.me/923035459620"
@@ -472,8 +449,6 @@ function Contact() {
               </div>
             </div>
           </div>
-
-          {/* ================= RIGHT FORM ================= */}
 
           <div
             className="
@@ -531,8 +506,6 @@ function Contact() {
                 />
               </div>
 
-              {/* EMAIL */}
-
               <div>
                 <label className="block text-sm text-gray-400 mb-2">
                   Your Email
@@ -561,8 +534,6 @@ function Contact() {
                   "
                 />
               </div>
-
-              {/* MESSAGE */}
 
               <div>
                 <label className="block text-sm text-gray-400 mb-2">
@@ -593,8 +564,6 @@ function Contact() {
                   "
                 ></textarea>
               </div>
-
-              {/* SUBMIT BUTTON */}
 
               <button
                 type="submit"
@@ -644,8 +613,6 @@ function Contact() {
                   </>
                 )}
               </button>
-
-              {/* STATUS MESSAGE */}
 
               {status.message && (
                 <div
