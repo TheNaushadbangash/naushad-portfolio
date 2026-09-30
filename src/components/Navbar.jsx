@@ -106,22 +106,23 @@ function Navbar() {
             href="/Naushad-Khan-CV.pdf"
             download="Naushad-Khan-CV.pdf"
             className="
-    inline-flex
-    items-center
-    gap-2
-    px-6
-    py-3
-    rounded-full
-    bg-gradient-to-r
-    from-cyan-500
-    to-blue-600
-    text-white
-    font-semibold
-    hover:scale-105
-    hover:shadow-[0_0_25px_rgba(34,211,238,0.35)]
-    transition-all
-    duration-300
-  "
+  hidden
+  md:inline-flex
+  items-center
+  gap-2
+  px-6
+  py-3
+  rounded-full
+  bg-gradient-to-r
+  from-cyan-500
+  to-blue-600
+  text-white
+  font-semibold
+  hover:scale-105
+  hover:shadow-[0_0_25px_rgba(34,211,238,0.35)]
+  transition-all
+  duration-300
+"
           >
             Download CV
           </a>
@@ -176,7 +177,7 @@ function Navbar() {
               href="/Naushad-Khan-CV.pdf"
               download="Naushad-Khan-CV.pdf"
               onClick={closeMenu}
-              className="flex items-center justify-center gap-2 mt-3 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 font-semibold hover:scale-[1.02] transition-all duration-300"
+              className="w-full flex items-center justify-center gap-2 mt-3 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-[1.02] transition-all duration-300"
             >
               <FaDownload />
               Download CV
