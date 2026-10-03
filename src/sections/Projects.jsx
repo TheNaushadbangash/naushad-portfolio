@@ -40,8 +40,8 @@ function Projects() {
       description:
         "A simple and responsive task management application with functionality for adding, editing and deleting tasks.",
       tech: ["React", "JavaScript", "CSS"],
-      github: "https://github.com/TheNaushadbangash",
-      live: "#",
+      github: "https://github.com/TheNaushadbangash/Todo-web-app",
+      live: "https://todowebapp-ecru.vercel.app",
       featured: false,
     },
 
@@ -312,14 +312,14 @@ function Projects() {
                       className="
                         px-3
                         py-1.5
-                        rounded-full
-                        bg-cyan-500/10
-                        border
-                        border-cyan-500/20
-                        text-cyan-300
-                        text-xs
-                        font-medium
-                      "
+                          rounded-full
+                          bg-cyan-500/10
+                          border
+                          border-cyan-500/20
+                          text-cyan-300
+                          text-xs
+                          font-medium
+                        "
                     >
                       {item}
                     </span>
@@ -332,12 +332,12 @@ function Projects() {
                     target="_blank"
                     rel="noreferrer"
                     className="
-                      flex-1
-                      flex
-                      items-center
-                      justify-center
-                      gap-2
-                      py-3
+                        flex-1
+                        flex
+                        items-center
+                        justify-center
+                        gap-2
+                        py-3
                       rounded-xl
                       bg-gray-800
                       border
