@@ -29,8 +29,8 @@ function Projects() {
       description:
         "A modern React e-commerce interface with reusable components, product browsing and a responsive shopping experience.",
       tech: ["React", "JavaScript", "Tailwind CSS"],
-      github: "https://github.com/TheNaushadbangash",
-      live: "#",
+      github: "https://github.com/TheNaushadbangash/E-commerce",
+      live: "https://ecommerce-zeta.vercel.app",
       featured: false,
     },
 
